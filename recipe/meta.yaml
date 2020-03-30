@@ -1,21 +1,21 @@
 {% set name = "markdown-it-py" %}
-{% set version = "0.4.3" %}
+{% set version = "0.4.4" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: "925da55cba665cb9808ef851885993f856c678c8009077a59ab3134d7dac876f"
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 124845bcd385ac82f584085135570c5852f4bcc7fcc66edd265394601ddb7743
 
 build:
   number: 0
   entry_points:
     - markdown-it = markdown_it.cli.parse:main
     - markdown-it-bench = markdown_it.cli.benchmark:main
-  noarch: "python"
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  noarch: python
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
@@ -46,11 +46,11 @@ test:
     - markdown-it-bench --help
 
 about:
-  home: "https://github.com/ExecutableBookProject/markdown-it-py"
-  license: "MIT"
-  license_family: "MIT"
-  license_file: "LICENSE"
-  summary: "Python port of markdown-it. Markdown parsing, done right!"
+  home: https://github.com/ExecutableBookProject/markdown-it-py
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Python port of markdown-it. Markdown parsing, done right!
   doc_url: https://github.com/ExecutableBookProject/markdown-it-py/blob/master/README.md
   dev_url: https://github.com/ExecutableBookProject/markdown-it-py
 
