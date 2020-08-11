@@ -1,5 +1,5 @@
 {% set name = "markdown-it-py" %}
-{% set version = "0.4.8" %}
+{% set version = "0.4.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fff51f9d107deb393dcd81e484a4334459fc2752ae83a76bea4b523372be6393
+  sha256: c6191ba46b84d169d5cffe77a3edea0ef263c016289f9507333587692a295c3a
 
 build:
   number: 0
