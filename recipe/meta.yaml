@@ -13,7 +13,6 @@ build:
   number: 0
   entry_points:
     - markdown-it = markdown_it.cli.parse:main
-    - markdown-it-bench = markdown_it.cli.benchmark:main
   noarch: python
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
@@ -31,6 +30,9 @@ test:
     - markdown_it.cli
     - markdown_it.common
     - markdown_it.extensions
+    - markdown_it.extensions.container
+    - markdown_it.extensions.deflist
+    - markdown_it.extensions.dollarmath
     - markdown_it.extensions.footnote
     - markdown_it.extensions.front_matter
     - markdown_it.extensions.myst_blocks
@@ -43,7 +45,6 @@ test:
     - markdown_it.rules_inline
   commands:
     - markdown-it --help
-    - markdown-it-bench --help
 
 about:
   home: https://github.com/ExecutableBookProject/markdown-it-py
