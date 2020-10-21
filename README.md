@@ -5,11 +5,13 @@ Home: https://github.com/ExecutableBookProject/markdown-it-py
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/markdown-it-py-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python port of markdown-it. Markdown parsing, done right!
 
+Development: https://github.com/ExecutableBookProject/markdown-it-py
 
+Documentation: https://github.com/ExecutableBookProject/markdown-it-py/blob/master/README.md
 
 Current build status
 ====================
