@@ -1,5 +1,5 @@
 {% set name = "markdown-it-py" %}
-{% set version = "0.5.8" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 488ea44bee25fdc8dea0d267c292d4ae82ff7e1a2388e450836561c56eac7699
+  sha256: 1c1413df39ef7baa55bca755d32c565d72e8b4114dcdd3da65eb468a61886659
 
 build:
   number: 0
@@ -22,6 +22,7 @@ requirements:
     - python >=3.6
   run:
     - attrs >=19.3,<21
+    - mdit-py-plugins >=0.2.1,<0.3.0
     - python >=3.6
 
 test:
