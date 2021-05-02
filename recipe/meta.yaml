@@ -22,23 +22,16 @@ requirements:
     - python >=3.6
   run:
     - attrs >=19.3,<21
-    - mdit-py-plugins >=0.2.1,<0.3.0
     - python >=3.6
+    - typing_extensions >=3.6.4  # [py<38]
 
 test:
+  requires:
+    - pip
   imports:
     - markdown_it
     - markdown_it.cli
     - markdown_it.common
-    - markdown_it.extensions
-    - markdown_it.extensions.container
-    - markdown_it.extensions.deflist
-    - markdown_it.extensions.dollarmath
-    - markdown_it.extensions.footnote
-    - markdown_it.extensions.front_matter
-    - markdown_it.extensions.myst_blocks
-    - markdown_it.extensions.myst_role
-    - markdown_it.extensions.texmath
     - markdown_it.helpers
     - markdown_it.presets
     - markdown_it.rules_block
@@ -46,6 +39,7 @@ test:
     - markdown_it.rules_inline
   commands:
     - markdown-it --help
+    - pip check
 
 about:
   home: https://github.com/ExecutableBookProject/markdown-it-py
