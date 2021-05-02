@@ -1,5 +1,5 @@
 {% set name = "markdown-it-py" %}
-{% set version = "0.6.2" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c3b9f995be0792cbbc8ab2f53d74072eb7ff8a8b622be8d61d38ab879709eca3
+  sha256: d40d537a9bc4cb5fba6d3fa8d769ffac394f1a54d373efdf6675469b6d38f8ec
 
 build:
   number: 0
@@ -22,23 +22,16 @@ requirements:
     - python >=3.6
   run:
     - attrs >=19.3,<21
-    - mdit-py-plugins >=0.2.1,<0.3.0
     - python >=3.6
+    - typing_extensions >=3.7.4
 
 test:
+  requires:
+    - pip
   imports:
     - markdown_it
     - markdown_it.cli
     - markdown_it.common
-    - markdown_it.extensions
-    - markdown_it.extensions.container
-    - markdown_it.extensions.deflist
-    - markdown_it.extensions.dollarmath
-    - markdown_it.extensions.footnote
-    - markdown_it.extensions.front_matter
-    - markdown_it.extensions.myst_blocks
-    - markdown_it.extensions.myst_role
-    - markdown_it.extensions.texmath
     - markdown_it.helpers
     - markdown_it.presets
     - markdown_it.rules_block
@@ -46,6 +39,7 @@ test:
     - markdown_it.rules_inline
   commands:
     - markdown-it --help
+    - pip check
 
 about:
   home: https://github.com/ExecutableBookProject/markdown-it-py
