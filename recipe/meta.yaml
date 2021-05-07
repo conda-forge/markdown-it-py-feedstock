@@ -10,7 +10,7 @@ source:
   sha256: d40d537a9bc4cb5fba6d3fa8d769ffac394f1a54d373efdf6675469b6d38f8ec
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - markdown-it = markdown_it.cli.parse:main
   noarch: python
