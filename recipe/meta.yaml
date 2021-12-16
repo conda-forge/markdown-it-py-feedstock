@@ -23,6 +23,7 @@ requirements:
   run:
     - attrs >=19.3,<22
     - python >=3.6
+    - mdurl >=0.1,<1
     - typing_extensions >=3.7.4
 
 test:
