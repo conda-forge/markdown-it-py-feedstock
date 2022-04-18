@@ -1,5 +1,5 @@
 {% set name = "markdown-it-py" %}
-{% set version = "2.0.1" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7b5c153ae1ab2cde00a33938bce68f3ad5d68fbe363f946de7d28555bed4e08a
+  sha256: cf7e59fed14b5ae17c0006eff14a2d9a00ed5f3a846148153899a0224e2c07da
 
 build:
   number: 0
@@ -18,11 +18,11 @@ build:
 
 requirements:
   host:
+    - python >=3.7
     - pip
-    - python >=3.6
+    - flit-core >=3.4,<4
   run:
-    - attrs >=19.3,<22
-    - python >=3.6
+    - python >=3.7
     - mdurl >=0.1,<1
     - typing_extensions >=3.7.4
 
