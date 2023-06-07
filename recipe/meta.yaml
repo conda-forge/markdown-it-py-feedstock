@@ -18,13 +18,12 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
     - flit-core >=3.4,<4
   run:
-    - python >=3.7
+    - python >=3.8
     - mdurl >=0.1,<1
-    - typing_extensions >=3.7.4
 
 test:
   requires:
