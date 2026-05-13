@@ -44,13 +44,13 @@ test:
     - pip check
 
 about:
-  home: https://github.com/ExecutableBookProject/markdown-it-py
+  home: https://github.com/executablebooks/markdown-it-py
   license: MIT
   license_family: MIT
   license_file: LICENSE
   summary: Python port of markdown-it. Markdown parsing, done right!
-  doc_url: https://github.com/ExecutableBookProject/markdown-it-py/blob/master/README.md
-  dev_url: https://github.com/ExecutableBookProject/markdown-it-py
+  doc_url: https://github.com/executablebooks/markdown-it-py/blob/master/README.md
+  dev_url: https://github.com/executablebooks/markdown-it-py
 
 extra:
   recipe-maintainers:
