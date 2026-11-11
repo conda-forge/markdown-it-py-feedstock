@@ -1,5 +1,5 @@
 {% set name = "markdown-it-py" %}
-{% set version = "4.2.0" %}
+{% set version = "4.3.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 04a21681d6fbb623de53f6f364d352309d4094dd4194040a10fd51833e418d49
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 91a58fa5b72c71a40cf7177250fd767480d7a2bb3ac426ccfb76fb90305fdaaa
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - flit-core >=3.4,<4
+    - flit-core >=3.4,<5
   run:
     - python >={{ python_min }}
     - mdurl >=0.1,<1
